@@ -1,7 +1,9 @@
 import Hero from "./comps/Hero";
 
 function App() {
-  return <Hero />;
+  return(
+    <Hero/>
+  )
 }
 
 export default App;

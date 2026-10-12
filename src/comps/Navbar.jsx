@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowUpRight } from "lucide-react";
+
 import { nav, theme } from "../constants";
 
 const Navbar = () => {
@@ -27,13 +28,16 @@ const Navbar = () => {
         ))}
       </div>
 
+      {/* lets build section */}
       <a
         href={nav.cta.href}
-        // style={{ borderColor: theme.accent }}
-        // className="hidden rounded-full border-[7px] bg-black px-5 py-2.5 text-[13px] font-semibold text-white transition duration-300 hover:-translate-y-0.5 lg:block"
-        className="hidden md:flex border rounded-lg  px-8 py-2.5"
+        className="group hidden items-center gap-2 rounded-xl border-2 border-white/30 bg-white/5 px-7 py-3 text-sm font-medium tracking-wide text-white backdrop-blur-md transition-all duration-300 hover:border-green-400 hover:bg-green-400 hover:text-black md:inline-flex"
       >
         {nav.cta.label}
+        <ArrowUpRight
+          size={16}
+          className="transition-transform duration-300 group-hover:rotate-45"
+        />
       </a>
 
       {/* Mobile toggle */}
