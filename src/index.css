@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Archivo+Black&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo Black", Impact, sans-serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+  --animate-marquee: marquee 30s linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
