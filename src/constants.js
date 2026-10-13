@@ -11,7 +11,7 @@ export const hero = {
 };
 
 export const nav = {
-  logo: { src: "/logo.svg", alt: "Pressure Cooker Studios" },
+  logo: { src: "/logo.svg", alt: "ELEVATE-XR" },
   links: [
     { label: "About Us", href: "#" },
     { label: "Our Games", href: "#", dropdown: true },
@@ -44,10 +44,11 @@ export const projects = {
       tags: ["Action", "Co-op"],
       rating: 4.8,
       badge: "Top Rated",
-      studio: "Orion Studios",
+      studio: "ELEVATE-XR",
       cta: "Play now",
       href: "#",
-      images: ["/game1-a.jpg", "/game1-b.jpg", "/game1-c.jpg", "/game1-d.jpg"],
+      images: ["/pace-1.webp"],
+      // "/game1-b.jpg", "/game1-c.jpg", "/game1-d.jpg"],
     },
     {
       title: "Echo Realms",
@@ -56,10 +57,11 @@ export const projects = {
       tags: ["XR", "Puzzle"],
       rating: 4.6,
       badge: "Editor's Pick",
-      studio: "Orion Studios",
+      studio: "ELEVATE-XR",
       cta: "Play now",
       href: "#",
-      images: ["/game2-a.jpg", "/game2-b.jpg", "/game2-c.jpg", "/game2-d.jpg"],
+      images: ["pace-2.webp"],
+      //  "/game2-b.jpg", "/game2-c.jpg", "/game2-d.jpg"],
     },
     {
       title: "Neon Drift",
@@ -68,21 +70,22 @@ export const projects = {
       tags: ["Racing", "Arcade"],
       rating: 4.7,
       badge: "New",
-      studio: "Orion Studios",
+      studio: "ELEVATE-XR",
       cta: "Play now",
       href: "#",
-      images: ["/game3-a.jpg", "/game3-b.jpg", "/game3-c.jpg", "/game3-d.jpg"],
+      images: ["/pace-3.webp"],
+      //  "/game3-b.jpg", "/game3-c.jpg", "/game3-d.jpg"],
     },
   ],
 };
 
 export const footer = {
-  logo: "LOGO",
-  slogan: "SOLOGAN COMPANY",
+  logo: "ELEVATE-XR",
+  slogan: "Build XR Beyond",
   columns: [
-    ["Services", "Theme Tweak"],
-    ["Showcase", "Widgetkit", "Support"],
-    ["About Us", "Contact Us", "Affiliates", "Resources"],
+    ["Services", "Custom Build"],
+    ["Showcase", "Support", "Join Us"],
+    ["About Us", "Contact Us", "Learn XR", "Resources"],
   ],
   copyright: "©Copyright. All rights reserved.",
 };
@@ -91,7 +94,7 @@ export const about = {
   title: "Welcome",
   tagline:
     "We build the games and XR experiences ourselves, and give you a seat alongside us.",
-  left: "Orion Studios is proud to present worlds that have been rigorously playtested and refined by our team through every stage of production. We give our partners the peace of mind of knowing that experienced developers are building alongside them.",
+  left: "ELEVATE-XR is proud to present worlds that have been rigorously playtested and refined by our team through every stage of production. We give our partners the peace of mind of knowing that experienced developers are building alongside them.",
   rightTitle: "We co-develop with studios worldwide",
   rightText:
     "Our team has a proven pipeline for shipping immersive titles, with a 5-year track record across games and XR platforms.",
@@ -109,4 +112,14 @@ export const cta = {
   text: "Ready to bring your idea to life? Contact our team of game and XR experts today to see how we can help you build smarter.",
   placeholder: "Enter Email Address",
   button: "Subscribe",
+};
+
+export const course = {
+  image: "/course.jpg", // put in public/
+  boldTitle: "XR Development Course:",
+  title: " Learn to Build Immersive Worlds",
+  price: "$30.00",
+  primary: "Enroll Now",
+  secondary: "View Syllabus",
+  text: "Extended reality is reshaping how people play, learn, and work. This hands-on course takes you from the fundamentals of VR and AR design to shipping your first interactive experience. Learn spatial interaction, 3D environments, and performance optimization, with guided projects you can add to your portfolio.",
 };

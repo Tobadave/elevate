@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { projects } from "../constants";
+import { projects, course } from "../constants";
 
 // Fallback gradients while placeholder images don't exist
 const fallbacks = [
@@ -107,24 +107,56 @@ const ProjectCard = ({ item, index }) => {
 };
 
 const Cards = () => (
-  <section className="bg-[#d9d9d9] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
-    <div className="mx-auto max-w-7xl">
-      <div className="mx-auto max-w-2xl animate-fade-up text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
-          {projects.title}
-        </h2>
-        <p className="mt-4 text-sm text-neutral-600 sm:text-base">
-          {projects.subtitle}
-        </p>
-      </div>
+  <>
+    <section className="bg-[#d9d9d9] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-2xl animate-fade-up text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
+            {projects.title}
+          </h2>
+          <p className="mt-4 text-sm text-neutral-600 sm:text-base">
+            {projects.subtitle}
+          </p>
+        </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-        {projects.items.map((item, i) => (
-          <ProjectCard key={item.title} item={item} index={i} />
-        ))}
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {projects.items.map((item, i) => (
+            <ProjectCard key={item.title} item={item} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div className="bg-white px-4 py-16 sm:px-10 sm:py-20 lg:py-24 lg:mb-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-2 md:gap-12">
+        {/* Image */}
+        <div
+          style={{
+            backgroundImage: `url(${course.image}), linear-gradient(160deg,#c9c9c9,#8d8d8d)`,
+          }}
+          className="aspect-4/3 w-full animate-fade-up rounded-2xl bg-cover bg-center"
+        />
+
+        {/* Content */}
+        <div className="animate-fade-up [animation-delay:150ms]">
+          <h2 className="text-2xl leading-tight tracking-tight text-[#12302d] sm:text-[28px]">
+            <span className="font-bold">{course.boldTitle}</span>
+            <span className="font-medium">{course.title}</span>
+          </h2>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            <button className="cursor-pointer rounded-full border border-[#12302d]/40 px-6 py-2.5 text-sm font-medium text-[#12302d] transition duration-300 hover:-translate-y-0.5 hover:border-[#12302d]">
+              {course.secondary}
+            </button>
+          </div>
+
+          <p className="mt-6 text-sm leading-relaxed text-[#12302d]/80">
+            {course.text}
+          </p>
+        </div>
       </div>
     </div>
-  </section>
+  </>
 );
 
 export default Cards;

@@ -59,7 +59,7 @@ const Footer = () => (
             key={label}
             href="#"
             aria-label={label}
-            className="flex h-[52px] w-[52px] items-center justify-center rounded-full border border-white/70 text-white transition duration-300 hover:-translate-y-1 hover:border-green-400 hover:bg-green-400 hover:text-black"
+            className="flex h-13 w-13 items-center justify-center rounded-full border border-white/20 bg-[#1e2430] text-white transition duration-300 hover:-translate-y-1 hover:border-green-400 hover:bg-green-400 hover:text-black"
           >
             <Icon size={17} />
           </a>
