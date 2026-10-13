@@ -187,7 +187,7 @@ const Cards = () => (
             style={{
               backgroundImage: `url(${course.image}), linear-gradient(160deg,#c9c9c9,#8d8d8d)`,
             }}
-            className="aspect-4/3 w-full rounded-2xl bg-cover bg-center"
+            className="aspect-4/3 w-full rounded-lg bg-cover bg-center"
           />
         </Reveal>
 
@@ -198,15 +198,15 @@ const Cards = () => (
             <span className="font-medium">{course.title}</span>
           </h2>
 
-          <div className="mt-5 flex flex-wrap gap-3">
-            <button className="cursor-pointer rounded-full border border-[#12302d]/40 px-6 py-2.5 text-sm font-medium text-[#12302d] transition duration-300 hover:-translate-y-0.5 hover:border-[#12302d]">
-              {course.secondary}
-            </button>
-          </div>
-
           <p className="mt-6 text-sm leading-relaxed text-[#12302d]/80">
             {course.text}
           </p>
+
+          <div className="mt-5 flex flex-wrap gap-3">
+            <button className="cursor-pointer rounded-lg border border-[#12302d]/40 px-6 py-2.5 md:py-3 text-sm font-medium text-[#12302d] transition duration-300 hover:-translate-y-0.5 hover:border-[#12302d]">
+              {course.secondary}
+            </button>
+          </div>
         </Reveal>
       </div>
     </div>

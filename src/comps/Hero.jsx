@@ -1,10 +1,6 @@
-import { hero, clients, theme } from "../constants";
-import About from "./About";
-import Cards from "./Cards";
-import Cta from "./Cta";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
+import { hero, clients } from "../constants";
 
 const Typewriter = ({ text, speed = 90, delay = 400 }) => {
   const [count, setCount] = useState(0);
@@ -38,13 +34,13 @@ const Typewriter = ({ text, speed = 90, delay = 400 }) => {
     </>
   );
 };
-// Footer
 
 const Hero = () => {
   const loop = [...clients, ...clients];
 
   return (
-    <>
+    <div>
+      {" "}
       <section className="relative flex min-h-screen flex-col overflow-hidden bg-[#0b0e10] font-body text-[#F5F5F7]">
         {/* Background video */}
         <video
@@ -82,11 +78,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <About />
-      <Cards />
-      <Cta />
-      <Footer />
-    </>
+    </div>
   );
 };
 

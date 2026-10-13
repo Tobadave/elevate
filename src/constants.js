@@ -121,5 +121,5 @@ export const course = {
   price: "$30.00",
   primary: "Enroll Now",
   secondary: "Start Building Now",
-  text: "Extended reality is reshaping how people play, learn, and work. This hands-on course takes you from the fundamentals of VR and AR design to shipping your first interactive experience. Learn spatial interaction, 3D environments, and performance optimization, with guided projects you can add to your portfolio.",
+  text: "Extended reality is reshaping how people play, learn, and work. This hands-on course takes you from the fundamentals of VR and AR design to shipping your first interactive experience. Learn spatial interaction, 3D environments, and performance optimization, with guided projects you can add to your portfolio. Along the way, you'll work with industry-standard engines and tools, build prototypes for headsets and mobile devices, and learn how to test with real users.",
 };

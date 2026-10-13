@@ -1,8 +1,8 @@
-import Hero from "./comps/Hero";
+import LandingPage from "./comps/LandingPage";
 
 function App() {
   return(
-    <Hero/>
+    <LandingPage/>
   )
 }
 
