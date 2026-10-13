@@ -4,7 +4,40 @@ import Cards from "./Cards";
 import Cta from "./Cta";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { useEffect, useState } from "react";
 
+const Typewriter = ({ text, speed = 90, delay = 400 }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let id;
+    const start = setTimeout(() => {
+      id = setInterval(() => {
+        setCount((c) => {
+          if (c >= text.length) {
+            clearInterval(id);
+            return c;
+          }
+          return c + 1;
+        });
+      }, speed);
+    }, delay);
+    return () => {
+      clearTimeout(start);
+      clearInterval(id);
+    };
+  }, [text, speed, delay]);
+
+  return (
+    <>
+      <span aria-label={text}>{text.slice(0, count)}</span>
+      <span
+        aria-hidden
+        className="ml-1 inline-block h-[0.8em] w-[0.06em] translate-y-[0.05em] animate-pulse bg-current align-baseline"
+      />
+    </>
+  );
+};
 // Footer
 
 const Hero = () => {
@@ -30,9 +63,8 @@ const Hero = () => {
 
         {/* Headline */}
         <div className="relative flex flex-1 items-center justify-center px-6">
-          <h1 className="animate-fade-up text-center font-display text-[clamp(2.7rem,8vw,6rem)] leading-none tracking-tight uppercase">
-            {/* text-clamp[(2.25rem, 8vw, 7rem)] // text-clamp([2.25])1 */}
-            {hero.headline}
+          <h1 className="text-center font-display text-[clamp(3.9rem,8vw,6rem)] leading-none uppercase">
+            <Typewriter text={hero.headline} />
           </h1>
         </div>
 

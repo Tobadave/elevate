@@ -8,6 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative z-30 mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
+      {/* logo area */}
       <img
         src={nav.logo.src}
         alt={nav.logo.alt}
@@ -58,8 +59,9 @@ const Navbar = () => {
           ))}
           <a
             href={nav.cta.href}
-            style={{ borderColor: theme.accent }}
-            className="rounded-full border-[6px] bg-black px-5 py-3 text-center text-xs font-semibold"
+            className="flex px-auto items-center group rounded-xl border-2 border-white/30 bg-white/5 px-7 
+            py-3 text-lg font-medium tracking-wide text-white transition-all duration-300
+          hover:border-green-400 hover:bg-green-400 hover:text-black md:inline-flex"
           >
             {nav.cta.label}
           </a>

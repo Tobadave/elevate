@@ -87,7 +87,7 @@ export const footer = {
     ["Showcase", "Support", "Join Us"],
     ["About Us", "Contact Us", "Learn XR", "Resources"],
   ],
-  copyright: "©Copyright. All rights reserved.",
+  copyright: "©Copyright 2026. All rights reserved.",
 };
 
 export const about = {
@@ -120,6 +120,6 @@ export const course = {
   title: " Learn to Build Immersive Worlds",
   price: "$30.00",
   primary: "Enroll Now",
-  secondary: "View Syllabus",
+  secondary: "Start Building Now",
   text: "Extended reality is reshaping how people play, learn, and work. This hands-on course takes you from the fundamentals of VR and AR design to shipping your first interactive experience. Learn spatial interaction, 3D environments, and performance optimization, with guided projects you can add to your portfolio.",
 };
