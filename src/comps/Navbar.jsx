@@ -21,7 +21,7 @@ const Navbar = () => {
           <a
             key={l.label}
             href={l.href}
-            className="flex items-center gap-1.5 text-base md:text-sm font-medium transition hover:opacity-60"
+            className="flex items-center gap-1.5 text-base md:text-sm font-medium transition hover:text-green-500"
           >
             {l.label}
             {l.dropdown && <ChevronDown size={14} fill="currentColor" />}
